@@ -5,7 +5,7 @@
   "logo": "https://i.pinimg.com/originals/71/1e/ad/711eadc0b06e9acb9d7caad3450eb265.png",
   "keywords": ["bot", "heroku", "music-playback", "discord"],
   "env": {
-    "MY_VAR_DISCORD": {
+    "BOT_TOKEN": {
       "description": "Discord token used to log in",
       "required": true
     },
@@ -16,10 +16,19 @@
   },
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+      "url": "https://github.com/guilherme-otran/heroku-buildpack-ffprobe"
+    },
+     {
+      "url": "https://github.com/Crazycatz00/heroku-buildpack-libopus"
+    },
+     {
+      "url": "https://github.com/alevfalse/heroku-buildpack-ffmpeg"
+    },
+     {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/issueapp/heroku-buildpack-ffmpeg"
+      "url": "https://github.com/kitcast/buildpack-ffmpeg"
     }
   ]
 }
