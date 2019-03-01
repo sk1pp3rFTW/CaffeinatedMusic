@@ -9,7 +9,7 @@
       "description": "Discord token used to log in",
       "required": true
     },
-    "MY_VAR_YOUTUBE": {
+    "YOUTUBE_API": {
       "description": "Google developers project API key",
       "required": false
     }
