@@ -1,0 +1,25 @@
+{
+  "name": "CaffeinatedMusic",
+  "description": "Discord bot for music playback",
+  "repository": "https://github.com/sk1pp3rFTW/CaffeinatedMusic/",
+  "logo": "https://i.pinimg.com/originals/71/1e/ad/711eadc0b06e9acb9d7caad3450eb265.png",
+  "keywords": ["bot", "heroku", "music-playback", "discord"],
+  "env": {
+    "MY_VAR_DISCORD": {
+      "description": "Discord token used to log in",
+      "required": true
+    },
+    "MY_VAR_YOUTUBE": {
+      "description": "Google developers project API key",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/issueapp/heroku-buildpack-ffmpeg"
+    }
+  ]
+}
